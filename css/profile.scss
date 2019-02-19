@@ -1,0 +1,43 @@
+.profile{
+  position:relative;
+  width: 100%;
+  padding-top: 80px;
+}
+.flexbox{
+  display:flex;
+  .history{
+    flex-grow:1;
+    h2{
+      font-size: 60px;
+    }
+  }
+  .contact{
+    border-top: 60px;
+    flex-grow:1;
+    h2{
+      font-size: 60px;
+    }
+    ul{
+      list-style-type:none;
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+ .flexbox{
+   display:block;
+   text-align: center;
+  .history{
+    h2{
+      font-size: 30px;
+    }
+  }
+  .contact{
+    border-top: 30px;
+    h2{
+      font-size: 30px;
+    }
+  }
+}
+}

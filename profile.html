@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Nakamura Kota's Portfolio</title>
+  <link rel="stylesheet" href="dest/style.css">
+  <link rel="stylesheet" href="dest/profile.css">
+</head>
+<body>
+  <main>
+    <div class="profile">
+      <h2>Profile</h2>
+      <p class="name">Nakamura Kota</p>
+      <p class="prof">1990年10月17日生まれ<br>長野県出身</p>
+    </div>
+    <div class="contact">
+      <h2>Contact</h2>
+      <ul>
+        <li><a href="mailto:mmilefun@gmail.com">mail</a></li>
+        <li><a href="https://github.com/N-K-Kota">github</a></li>
+      </ul>
+    </div>
+  </main>
+  <nav>
+    <button class="menuBtn" onclick="openMenu()">Menu</button>
+    <div class="nav hide">
+      <div class="modal" onclick="closeMenu()"></div>
+      <ul class="menulinks">
+        <li><div class="xbtn"><div class="cancel" onclick="closeMenu()"></div></div></li>
+        <li class="mt-50"><a href="index.html">Home</a></li>
+        <li class="mt-10"><a href="products.html">Products</a></li>
+        <li class="mt-10"><a href="profile.html">Profile</a></li>
+      </ul>
+   </div>
+  </nav>
+  <script src="src/menu.js"></script>
+</body>
+</html>

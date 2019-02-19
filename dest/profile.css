@@ -1,0 +1,31 @@
+.profile {
+  position: relative;
+  width: 100%;
+  padding-top: 80px; }
+
+.flexbox {
+  display: flex; }
+  .flexbox .history {
+    flex-grow: 1; }
+    .flexbox .history h2 {
+      font-size: 60px; }
+  .flexbox .contact {
+    border-top: 60px;
+    flex-grow: 1; }
+    .flexbox .contact h2 {
+      font-size: 60px; }
+    .flexbox .contact ul {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px; }
+
+@media screen and (max-width: 900px) {
+  .flexbox {
+    display: block;
+    text-align: center; }
+    .flexbox .history h2 {
+      font-size: 30px; }
+    .flexbox .contact {
+      border-top: 30px; }
+      .flexbox .contact h2 {
+        font-size: 30px; } }

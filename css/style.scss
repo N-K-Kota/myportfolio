@@ -1,0 +1,112 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+main{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+#ancprofile,#ancintro,#ancportfolio{
+  scroll-behavior: smooth;
+}
+#homebtn,#productsbtn,#profilebtn{
+  border-style:none;
+  width:100%;
+  height: 100%;
+}
+#productsbtn:focus{
+  outline:none;
+  box-shadow: 1px 1px 1px 2px #dcdcdc inset;
+}
+
+#profilebtn:focus{
+  outline: none;
+  box-shadow: 1px 1px 1px 2px #dcdcdc inset;
+}
+#productsbtn:focus-visible{
+  outline: 4px dashed darkorange;
+  box-shadow: 1px 1px 1px 2px #dcdcdc inset;
+}
+#profilebtn:focus-visible{
+  outline: 4px dashed darkorange;
+  box-shadow: 1px 1px 1px 2px #dcdcdc inset;
+}
+
+.nav{
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  right: 0%;
+  top: 50%;
+  margin-top: 70px;
+  border-top:solid 1px rgb(81, 80, 80);
+  border-bottom: solid 1px rgb(81, 80, 80);
+  animation: menuanime 1s linear 1.5s backwards;
+  z-index: 99;
+  ul{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    height: 100%;
+    li{
+      display:inline-block;
+      width:30%;
+      height: 100%;
+    }
+  }
+}
+.fixednav{
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  right: 0%;
+  top: 0px;
+  border-style: none;
+  background-color: white;
+  border-bottom:1px solid rgb(81, 80, 80);
+  z-index: 99;
+  ul{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    list-style-type: none;
+    li{
+      display:inline-block;
+      height: 100%;
+      width: 30%;
+    }
+  }
+}
+@keyframes menuanime{
+  0%{
+    opacity: 0;
+    width: 0px;
+    border-color: white;
+  }
+  1%{
+    opacity: 1;
+    width: 0%;
+    background-color: white;
+  }
+  100%{
+    width: 100%;
+    border-color: rgb(81, 80, 80);
+  }
+}
+.mt-50{
+  margin-top: 50px;
+}
+.mt-10{
+  margin-top: 10px;
+}
+
+
+@media screen and (max-width: 900px){
+  /* スマホ用のスタイル*/
+  .nav{
+     margin-top: 35px;
+  }
+}
